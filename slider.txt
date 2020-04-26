@@ -11,7 +11,6 @@
 }
 
 .switch input { 
-  opacity: 0;
   width: 0;
   height: 0;
 }
@@ -31,8 +30,8 @@
 .slid:before {
   position: absolute;
   content: "";
-  height: 24px;
-  width: 24px;
+  height: 50px;
+  width: 50px;
   left: 2px;
   bottom: 2px;
   background-color: white;
@@ -49,17 +48,14 @@ input:focus + .slid {
 }
 
 input:checked + .slid:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
- /*Rounded sliders */
-.slid.round {
+.slid.circle {
   border-radius: 40px;
 }
 
-.slid.round:before {
+.slid.circle:before {
   border-radius: 50%;
 }
 </style>
@@ -67,7 +63,7 @@ input:checked + .slid:before {
 <body>
 <label class="switch">
   <input type="checkbox">
-  <span class="slid round"></span>
+  <span class="slid circle"></span>
 </label>
 
 </body>
